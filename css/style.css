@@ -1,0 +1,287 @@
+    *{
+        margin: 0;
+        font-family: sans-serif;
+    }
+    body{
+        
+        background: rgb(0, 0, 0);
+        background: linear-gradient(181deg, #000000 20%, #BE8E01 63%, #FFC419 100%) 0% 0%;
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+    }
+    header{
+        display: flex;	
+        height: 120px;
+        margin-left: 20px;
+        margin-top: 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #logo{
+        width: 280px;
+        
+    }
+    .logo{
+        width: 180px;
+        
+    }
+    
+    .nav.nav-tabs {
+        margin-left: 10px; 
+        
+    }
+
+    /* Cambiar el color de fondo de la barra de navegación */
+    .nav.nav-tabs {
+        background-color: #000000; /* Cambia el color de fondo */
+    }
+
+    /* Cambiar el color de texto de los enlaces */
+    .nav.nav-tabs .nav-link {
+        color: #C58D26; /* Cambia el color del texto */
+    }
+
+    /* Cambiar el color de fondo de los enlaces activos */
+    .nav.nav-tabs .nav-link.active {
+        background-color: #000000; /* Cambiar el color de fondo del enlace activo */
+        color: #C58D26; /* Cambia el color del texto del enlace activo */
+    }
+
+    /* Cambiar el color de fondo de los enlaces al pasar el ratón sobre ellos */
+    .nav.nav-tabs .nav-link:hover {
+        background-color: #BE8E01; /* Cambia el color de fondo al pasar el ratón sobre los enlaces */
+        color: #ffffff; /* Cambia el color del texto al pasar el ratón sobre los enlaces */
+    }
+
+    .carousel-item img {
+        max-height: 500px; /* Ajusta la altura máxima */
+        width: auto; /* Para que el ancho se ajuste automáticamente*/
+    }
+
+
+    .redes{
+        text-align: left;
+        margin-left: 100px;
+    }
+
+    .img-redes{
+        text-align: left;
+        max-width: 40px;
+    }
+    h1{
+        text-align: center;
+    }
+    .banner{
+        color: #ffffff;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .banner p{
+        padding: 20px;
+        text-align: justify;
+    }
+    .imgQuienes{
+        float: left; /* Hacer que la imagen flote a la izquierda */
+        margin-right: 20px; /* Espacio entre la imagen y el texto */
+        margin-bottom: 10px;
+    }
+    .imgObjetivos{
+        float: right; /* Hacer que la imagen flote a la derecha */
+        margin-left: 20px; /* Espacio entre la imagen y el texto */
+        margin-top: 35px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    .imgValores{
+        float: left; /* Hacer que la imagen flote a la derecha */
+        margin-right: 20px; /* Espacio entre la imagen y el texto */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 200px;
+    }
+    .img-thumbnail {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+    .waviy {
+        text-align: center;
+        margin: 20px;
+    }
+    .waviy span {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        animation: flip 3s infinite;
+        animation-delay: calc(.2s * var(--i))
+    }
+
+    @keyframes flip {
+
+        0%,
+        80% {
+            transform: rotateY(360deg)
+        }
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+    .text-galeria{
+        text-align: center;
+        color: #ffffff;
+        padding-bottom: 50px;
+    }
+    .gallery img {
+        width: 100%;
+        height: 280px;
+        border: 1px solid #ccc;    
+        transition: transform 0.3s, filter 0.3s; /* Agrega transición para filter */
+    }
+
+    .gallery video {
+        width: 100%;
+        height: 280px;
+        border: 1px solid #ccc;
+        background-color: #4e4e4e;
+        transition: transform 0.3s, filter 0.3s; /* Agrega transición para filter */
+    }
+
+    /* Aplica el efecto de blanco y negro por defecto */
+    .grayscale {
+        filter: grayscale(100%);
+    }
+
+    /* Agrega el efecto de color al pasar el cursor */
+    .grayscale:hover {
+        filter: grayscale(0%);
+    }
+
+    .gallery img:hover {
+        transform: scale(1.1);
+    }
+
+    footer .social_media{
+        margin: 10px auto;
+        width: 50%;
+        height: 50px;
+        text-align: center;
+    }
+    .social_media a{
+        text-decoration: none;
+    }
+
+    .info{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+    .info nav{
+        margin-top: 25px;
+    }
+    .info ul{
+        display: inline-flex;
+    }
+    .info li{
+        list-style: none;
+    }
+    .info a{
+        font-size: 18px;
+        text-decoration: underline;
+        padding: 15px 15px;
+        color: rgb(0, 0, 0);
+        
+    }
+    .info h3{
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .info .pages{
+        width: 100%;
+        height: 50px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    
+
+    @media (max-width: 767px) {
+        #loguito {
+        width: 200px;
+        height: 200px;
+        }
+        .loguito {
+            width: 100px;
+            height: 100px;
+            
+        }
+        
+        .navbar-toggler{
+            width: 50px;
+            height: 50px;
+        
+        }
+        .navbar-toggler-icon{
+            width: 20px;
+            height: 20px;
+        }
+
+        header {
+            display: none !important;
+        }
+        .waviy span{
+            margin-top: 50px;
+            font-size: 25px;
+        }    
+            
+        
+        footer .social_media{
+            margin: 10px auto;
+            width: 100%;
+            height: 20px;
+            text-align: center;
+        }
+        .info{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+        .info nav{
+            margin-top: 20px;
+        }
+        .info a{
+            font-size: 12px;
+            text-decoration: underline;
+            padding: 15px 15px;
+            color: rgb(0, 0, 0);  
+        }
+        .info .pages{
+            width: 20%;
+            height: 20%;
+        }
+    }
